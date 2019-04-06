@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Gugi|Rajdhani|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="designs.js"></script>
+</head>
+<body>
+    <h1 style="font-family: Gugi">Pixel Art Maker by Julbintara</h1>
+    <h3 style="font-family: Rajdhani">Choose The Grid Size</h3>
+
+    <form id="sizePicker" style="font-family: Inconsolata">
+
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" max="500" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" max="500" value="1">
+        
+        <input id="button" class="submit" type="submit">
+     
+    </form>
+    
+    <h3 style="font-family: Rajdhani">Pick A Color</h3>
+    <input type="color" id="colorPicker">
+    
+    <h3 style="font-family: Rajdhani">Canvas Design</h3>
+    
+    <table id="pixel_canvas"></table>
+    
+   
+</body>
+</html>
