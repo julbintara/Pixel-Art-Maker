@@ -10,15 +10,15 @@ $(function(){
 	    	for (var j = 1;j <= cells; j++) {
 	      		$( 'tr:last').append("<td></td>");         
 	      		$('td').addClass('cells');
-	   		}
+	   		} //add cell for each row
 
 	   		event.preventDefault(); 
 	   		
 	   		$(".cells").click(function(draw){
 	   			var color = $("#colorPicker").val();
 	   			$(draw.target).css("background-color", color);
-	   		});      
-	 	}
+	   		}); //give color to the clicked cell
+	 	} 
 
 	});
 });
